@@ -9,11 +9,11 @@ classification, with cross-validated hyperparameter tuning.
 
 | Model | K | Recall | Precision | F1 | AUC |
 |---|---|---|---|---|---|
-| Baseline | 1,000 | 0.625 | 0.673 | 0.648 | 0.886 |
-| CV-tuned | **150** | **0.723** | 0.835 | 0.775 | 0.934 |
+| Baseline | 1,000 | 0.684 | 0.578 | 0.626 | 0.862 |
+| CV-tuned | **200** | **0.714** | 0.648 | 0.680 | 0.902 |
 
-Cross-validation identified K=150 as optimal — 7x fewer features than the baseline, with
-~10 percentage points gain in recall and improved performance across all metrics.
+Cross-validation identified K=200 as optimal, using 5x fewer features than the baseline, with
+~3 percentage points gain in recall and improved performance across all metrics.
 
 ## Project Structure
 
@@ -38,12 +38,12 @@ scikit-learn on the first run.
 
 ## Methodology
 
-1. **Mean subtraction** — centers the data matrix before decomposition.
-2. **Full SVD** — decomposes the centered matrix; right singular vectors are the eigenfaces.
-3. **Scree plot** — shows cumulative variance explained vs K to justify truncation choice.
-4. **Leakage-free protocol** — SVD and mean centering computed on training data only;
+1. **Mean subtraction**: centers the data matrix before decomposition.
+2. **Full SVD**: decomposes the centered matrix; right singular vectors are the eigenfaces.
+3. **Scree plot**: shows cumulative variance explained vs K to justify truncation choice.
+4. **Leakage-free protocol**: SVD and mean centering computed on training data only;
    test set projected onto training-derived basis vectors.
-5. **5-fold stratified CV** — SVD re-computed within each fold; K selected to maximize
+5. **5-fold stratified CV**: SVD re-computed within each fold; K selected to maximize
    recall on the positive class (George W. Bush).
 
 ## References
