@@ -48,9 +48,13 @@ scikit-learn on the first run.
 
 ## References
 
-- Sirovich & Kirby (1987). *A low-dimensional procedure for the characterization of human faces.* JOSAA.
-- Turk & Pentland (1991). *Eigenfaces for recognition.* Journal of Cognitive Neuroscience.
-- Huang et al. (2007). *Labeled Faces in the Wild.* UMass Technical Report 07-49.
+- G. B. Huang, M. Ramesh, T. Berg, and E. Learned-Miller. Labeled Faces in the Wild: A Database for Studying Face Recognition in Unconstrained Environments. University of Massachusetts, Amherst, Technical Report 07-49, October, 2007.
+
+- M. Kirby and L. Sirovich. Application of the Karhunen-Loeve procedure for the characterization of human faces. IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), 12(1):103-108, 1990.
+
+- L. Sirovich and M. Kirby. A low-dimensional procedure for the characterization of human faces. Journal of the Optical Society of America A, 4(3):519-524, 1987
+
+- M. Turk and A. Pentland. Eigenfaces for recognition. Journal of Cognitive Neuroscience, 3(1):71-86, 1991.
 
 ---
 
