@@ -1,7 +1,7 @@
 # SVD-Based Facial Recognition: Eigenfaces & Dimensionality Reduction
 
 Unsupervised dimensionality reduction via Singular Value Decomposition (SVD) applied to the
-[Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) (LFW) dataset. The project
+[Labeled Faces in the Wild](https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/labeled-faces-in-the-wild-lfw-dataset) (LFW) dataset. The project
 demonstrates eigenfaces for facial representation and SVD-projected features for binary
 classification, with cross-validated hyperparameter tuning.
 
